@@ -65,9 +65,9 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
-}
 
+/* .saveBtn i:hover {
+ can add click function instead of hover
+  /* /* transition: all .3s ease-in-out; */
+/* }  */ 
 
