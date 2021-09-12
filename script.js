@@ -18,15 +18,15 @@ $(".row").each(function() {
 });
 
 // click button and save to local storage
-   var textInput = document.querySelector(".col-8");
-   $(".col-2 saveBtn").click(function() {
-   storageInput.addEventListeneer('textarea', data =>{
-      console.log(data.target.value)
-      textInput.textContent = data.target.value
-   })
-});
-// to retrieve from local storage
-localStorage.getItem
+   var textInput = $(".col-8").value;
+   var saveList = () => {
+      console.log("enter-SaveList")
+     localStorage.setItem("toDoInput", textInput.textContent)}
+   $(":button").click(saveList);
+     
+   
+   // to retrieve from local storage
+// localStorage.getItem
 // localStorage.getItem(".row", $(".row".valueOf ));
 
 
