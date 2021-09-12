@@ -18,14 +18,13 @@ $(".row").each(function() {
 });
 
 // click button and save to local storage
-   var storageList = document.querySelector(".col-8");
    var textInput = document.querySelector(".col-8");
-   var button = $(".col-2 saveBtn")
-   
+   $(".col-2 saveBtn").click(function() {
    storageInput.addEventListeneer('textarea', data =>{
       console.log(data.target.value)
       textInput.textContent = data.target.value
    })
+});
 // to retrieve from local storage
 localStorage.getItem
 // localStorage.getItem(".row", $(".row".valueOf ));
