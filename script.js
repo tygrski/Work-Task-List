@@ -18,12 +18,16 @@ $(".row").each(function() {
 });
 
 // click button and save to local storage
-   var textInput = $(".col-8").value;
-   var saveList = () => {
-      console.log("enter-SaveList")
-     localStorage.setItem("toDoInput", textInput.textContent)}
-   $(":button").click(saveList);
-     
+function saveList() {
+   // console.log(this)
+   var textInput = $(this).siblings("textarea").val()
+   var taskHour = $(this).parent().attr("id")
+   // console.log("enter-SaveList:", textInput, taskHour)
+   localStorage.setItem("toDoInput"+taskHour, textInput)
+};
+$(".saveBtn").on("click", saveList);
+   
+localStorage.getItem("toDoInput"+taskHour, textInput);
    
    // to retrieve from local storage
 // localStorage.getItem
