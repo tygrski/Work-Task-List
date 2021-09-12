@@ -21,10 +21,7 @@ $(".row").each(function() {
 });
 
 // click button and save to local storage
-
 function saveList() {
-   // console.log(this)
-  // console.log("enter-SaveList:", textInput, taskHour)
    var taskHour = $(this).parent().attr("id")
    var textInput = $(this).siblings("textarea").val()
    localStorage.setItem("toDoInput"+taskHour, textInput)
@@ -33,7 +30,7 @@ function saveList() {
 $(".saveBtn").on("click", saveList);
 
 // to retrieve from local storage 
-   $("textarea", this).val(localStorage.getItem("toDoInput" + textInput));
+   $("textarea", this).val(localStorage.getItem("toDoInput"));
 
    
 
