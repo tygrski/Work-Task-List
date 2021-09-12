@@ -15,22 +15,27 @@ $(".row").each(function() {
    } else if(moment().format("H") > divHour) { 
       $(this).addClass("future");
    }
+  if (localStorage.getItem("toDoInput" + divHour) != null) {
+   $("textarea", this).val(localStorage.getItem("toDoInput" + divHour))
+};
 });
 
 // click button and save to local storage
+
 function saveList() {
    // console.log(this)
-   var textInput = $(this).siblings("textarea").val()
+  // console.log("enter-SaveList:", textInput, taskHour)
    var taskHour = $(this).parent().attr("id")
-   // console.log("enter-SaveList:", textInput, taskHour)
+   var textInput = $(this).siblings("textarea").val()
    localStorage.setItem("toDoInput"+taskHour, textInput)
 };
+
 $(".saveBtn").on("click", saveList);
+
+// to retrieve from local storage 
+   $("textarea", this).val(localStorage.getItem("toDoInput" + textInput));
+
    
-localStorage.getItem("toDoInput"+taskHour, textInput);
-   
-   // to retrieve from local storage
-// localStorage.getItem
-// localStorage.getItem(".row", $(".row".valueOf ));
+
 
 
