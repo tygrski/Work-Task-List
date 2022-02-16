@@ -1,7 +1,7 @@
 # Work Task List
 
-## Description
-Task List allows users to see rows of the work-day hours , color coded for past, present and future. Create a task for any hours and save that task to local storage
+# Description
+## Task List allows users to see rows of the work-day hours , color coded for past, present and future. Create a task for any hours and save that task to local storage
 
 ## Live url link : https://tygrski.github.io/Work-Task-List/
 
