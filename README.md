@@ -10,9 +10,9 @@
 
 # Created With HTML, CSS , JavaScript and JQuery
 # Features added :
-✔ Current time display
-✔ Rows and columns
-✔ Color coordinated Past, Present, Fututr Hrs 
-✔ Save button
-✔ Save and retrieve from Local Storage
+✔ Current time display<br/>
+✔ Rows and columns<br/>
+✔ Color coordinated Past, Present, Fututr Hrs <br/>
+✔ Save button<br/>
+✔ Save and retrieve from Local Storage<br/>
 # Created By : Travis Tybor
